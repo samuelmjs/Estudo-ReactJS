@@ -1,0 +1,13 @@
+body{
+    color: #fff;
+}
+
+#header{
+    height: 80px;
+    background:#4A96D9;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
