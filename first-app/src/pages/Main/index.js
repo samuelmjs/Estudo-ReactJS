@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { FaGithub, FaPlus, FaSpinner } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-import api from '../../services/app';
+import api from '../../services/api';
 
-import { Container, Form, SubmitButton, List } from './styles';
+import Container from '../../components/Container';
+import { Form, SubmitButton, List } from './styles';
 
 export default function Main() {
   const [newRepo, setNewRepo] = useState('');
@@ -72,7 +74,9 @@ export default function Main() {
         {repositories.map(repository => (
           <li key={repository.name}>
             <span>{repository.name}</span>
-            <a href="">Detalhes</a>
+            <Link to={`/repository/${encodeURIComponent(repository.name)}`}>
+              Detalhes
+            </Link>
           </li>
         ))}
       </List>
