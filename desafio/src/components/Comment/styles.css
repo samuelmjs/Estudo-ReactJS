@@ -1,0 +1,26 @@
+
+.commentContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    align-items: flex-start;
+}
+
+.commentContainer div#photo{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #999;
+    margin-right: 15px;
+}
+
+.commentContainer div.comment{
+    background: #EEEEEE;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.commentContainer div.comment p#comment{
+    font-size: 13px;
+}
